@@ -59,7 +59,7 @@ public class SpellChecker {
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
 		// Your code goes here
-		int min = threshold;
+		int min = threshold + 1;
 		String correct = word;
 		for (int i = 0; i < dictionary.length; i++) {
 			int distance = levenshtein(word, dictionary[i]);
